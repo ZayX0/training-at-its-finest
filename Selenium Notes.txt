@@ -1,0 +1,12 @@
+remote - interface to run tests on remotely (saucelabs): chrome, IE, etc
+local - interface to run in the local env
+
+pytest.fixture: each test will hit this for setup, thats why its set to function scope
+
+def setup(self, wrapped_selenium_webdriver: WrappedSeleniumWebdriver):
+    print("Entering Setup")
+    self.webdriver = wrapped_selenium_webdriver
+
+wrapped_selenium_webdriver: WrappedSeleniumWebdriver - tells what type of object wrapped_selenium_webdriver is with colon
+
+Protobufs - Like XML that is faster
