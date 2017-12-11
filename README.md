@@ -1,1 +1,1 @@
-# coursera-FTW
+# SHIELD/Git training
